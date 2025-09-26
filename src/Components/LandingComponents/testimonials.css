@@ -1,0 +1,178 @@
+.testimonials-section {
+  padding: 60px 0;
+  background-color: #f9f9f951;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.testimonials-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 32px;
+}
+
+/* ✅ مهم جدًا: نضمن أن السلايد نفسه يتمدد */
+.swiper-slide {
+  display: flex;
+  height: auto;
+  padding-top: 10px;
+}
+
+/* ✅ الكارت ياخد طول السلايد كله */
+.testimonial-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 16px;
+  padding: 0px;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ محتوى الفيدباك */
+.testimonial-feedback {
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 16px;
+  color: #1A1A1A;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: right;
+  direction: rtl;
+  margin-bottom: 16px;
+  border-right: 4px solid #915EF6;
+  min-height: 120px; /* تثبيت الطول يساعد على توازن الكروت */
+  flex-grow: 1;
+}
+
+/* ✅ اسم المستخدم */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #1A1A1A;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.user-icon {
+  color: #7B51E4;
+  font-size: 18px;
+}
+
+/* ✅ تقييم النجوم */
+.testimonial-stars {
+  text-align: center;
+  color: #FFB400;
+  font-size: 20px;
+}
+
+/* ✅ رسبونسف */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 20px;
+  }
+  .testimonials-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 350px;
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  padding: 3px;
+}
+
+/* حركة Bounce للأفاتار */
+.bounce-avatar {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.testimonial-user {
+  font-size: 1rem;
+  color: #333;
+}
+
+.testimonial-feedback {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.testimonial-text {
+  margin: 0 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-icon {
+  font-size: 20px;
+  color: #0d6efd;
+  opacity: 0.7;
+  position: absolute;
+  animation: pulse 2s infinite;
+}
+
+.quote-left {
+  top: -5px;
+  left: 0;
+}
+
+.quote-right {
+  bottom: -5px;
+  right: 0;
+}
+
+/* حركة Pulse للأيقونات */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}

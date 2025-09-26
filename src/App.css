@@ -1,0 +1,56 @@
+:root {
+  --main-font: "El Messiri", sans-serif;
+  --primary-color: #915EF6;
+  --primary-color-light: rgba(145, 94, 246, 0.129);
+  --accent-color: #327AFF;
+  --background-color: #f8f7fa;
+  --side-bar-color: #1B0F31;
+  --Activeside-bar-color: #FFFFFF14;
+  --black-color: #27242F;
+  --delete-color: red;
+  --delete-color-light: rgba(244, 113, 113, 0.118);
+  --black-color: #27242F;
+  --dark-gray-color: #424047;
+  --mid-gray-color: #7B7686;
+  --very-light-gray-color: #A6A1B1;
+  --very-very-light-gray-color: #CDC5DC;
+  --border-color: #EFECF3;
+  --white-color: #FFFFFF;
+  --primary-color-light: rgba(145, 94, 246, 0.129);
+  --delete-color: red;
+  --delete-color-light: rgba(244, 113, 113, 0.118);
+}
+
+
+
+*{
+    transition: all ease 0.3s;
+}
+.SectionTitle{
+    text-align: center;
+    color: var(--primary-color);
+     font-weight: 700
+}
+.SectionDescribe{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700
+}
+.globalBtn{
+    background-color: var(--primary-color);
+    color: white;
+     border: 0.1rem solid transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.globalBtn:hover{
+    background-color:transparent;
+    border: 0.1rem solid var(--primary-color);
+    color: var(--primary-color);
+  
+}
