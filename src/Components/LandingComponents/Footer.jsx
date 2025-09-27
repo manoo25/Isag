@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "../../assets/Images/Logo.png";
+
 
 const colors = {
   primary: "#915EF6",
@@ -40,7 +42,7 @@ const Footer = () => {
                 letterSpacing: "0.5px",
               }}
             >
-              <img src="src/assets/Logo/Asset 1.svg"
+              <img src={Logo}
                 alt="Marketly Logo"
                 style={{ width: "80px", height: "auto" }} />
             </h4>

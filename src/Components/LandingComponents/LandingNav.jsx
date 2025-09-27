@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaRocket, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./nav.css";
 import { Link, useNavigate } from "react-router-dom";
+import Logo from "../../assets/Images/Logo.png";
+
 
 const LandingNavbar = ({ token }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,8 +73,7 @@ const LandingNavbar = ({ token }) => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            <img
-              src="src/assets/Logo/Asset 1.svg"
+            <img src={Logo}
               alt="Marketly Logo"
               style={{ width: "100px", height: "auto" }}
             />
@@ -93,10 +94,10 @@ const LandingNavbar = ({ token }) => {
 
           {/* عناصر القائمة */}
           <div
-            className="collapse navbar-collapse justify-content-between"
+            className="collapse navbar-collapse justify-content-between "
             id="navbarNav"
           >
-            <ul className="navbar-nav me-4">
+            <ul className="navbar-nav me-4 ">
               <li className="nav-item">
                 <button
                   className="nav-link btn btn-link"
