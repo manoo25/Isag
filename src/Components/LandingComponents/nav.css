@@ -1,6 +1,16 @@
 /* عناصر النافبار */
-.navbar-nav .nav-item .btn-link {
+/* .navbar-nav .nav-item .btn-link {
   color: #495057;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+} */
+
+.navbar-nav .nav-item .btn-link {
+  color: var(--primary-color);
+border-bottom: dashed 0.1rem white !important;
   text-decoration: none;
   transition: all 0.3s ease;
   padding: 0.5rem 1rem;
@@ -17,10 +27,12 @@
 /* وقت ما تكون الشاشة صغيرة */
 @media (max-width: 991.98px) {
   .navbar-nav {
+width:90%;
+margin: auto;
+margin-right: 0;
     margin-top: 1rem;
-    background-color: #e9ecef;  /* خلفية رمادي فاتح */
+    background-color: #10043b;  /* خلفية رمادي فاتح */
     padding: 0.75rem;
-    border-radius: 8px;
   }
   
   .navbar-nav .nav-item {

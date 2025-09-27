@@ -81,8 +81,8 @@ const tabs = [
 
 const FeaturesSection = () => {
   return (
-    <section className="features-section py-5">
-      <h1 className="SectionTitle">أعمالنا ومشروعاتنا</h1>
+    <section className="features-section py-5" id='works-section'>
+      <h1 className="SectionTitle mt-5">أعمالنا ومشروعاتنا</h1>
       <p className="SectionDescribe">
         تقدم شركة ايساج تك أفضل الحلول والعروض المتاحة لـ تصميم المواقع
       </p>

@@ -10,8 +10,8 @@ function TestimonialsSection() {
 
 
   return (
-    <div className="testimonials-section">
-      <h2 className="testimonials-title">آراء عملائنا</h2>
+    <div className="testimonials-section pt-5" id="testimonials-section">
+      <h2 className="testimonials-title mt-5">آراء عملائنا</h2>
       <div className="swiper-container">
         <Swiper
           modules={[Autoplay]}

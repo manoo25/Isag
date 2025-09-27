@@ -4,7 +4,7 @@ import Avatar from "../../assets/Images/user.png";
 function TestimonialCard() {
 
   return (
-    <div className="testimonial-card chat-style"  id="testimonials-section" >
+    <div className="testimonial-card chat-style"   >
        <div className="testimonial-header d-flex align-items-center gap-3">
         <img
           className="user-icon bounce-avatar"

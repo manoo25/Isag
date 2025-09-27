@@ -4,11 +4,11 @@ import "./HeroSection.css";
 import HeroImg from "../../../assets/Images/Hero.png";
 import { Link } from "react-router-dom";
 
-const icons = [<FaLaptopCode />, <FaMobileAlt />, <FaServer />, <FaCode />];
+const icons = [<FaLaptopCode />, <FaMobileAlt />, <FaServer />];
 
 const HeroSection = () => {
   return (
-    <section className="hero-container">
+    <section className="hero-containerH pt-4 pt-md-5" id='hero-containerH'>
       {/* خلفية الأيقونات */}
       <div className="binary-background">
         {Array.from({ length: 50 }).map((_, i) => (

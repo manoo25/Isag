@@ -3,14 +3,14 @@ import Logo from "../../assets/Images/Logo.png";
 
 
 const colors = {
-  primary: "#915EF6",
+  primary: "#00247E",
   accent: "#327AFF",
   background: "#FFFFFF",
   softBg: "#F9F9F9",
   text: "#1A1A1A",
   textSecondary: "#666666",
   border: "#E0E0E0",
-  icon: "#7B51E4",
+  icon: "#00247E",
 };
 
 const Footer = () => {
@@ -44,7 +44,7 @@ const Footer = () => {
             >
               <img src={Logo}
                 alt="Marketly Logo"
-                style={{ width: "80px", height: "auto" }} />
+                style={{ width: "150px", height: "auto" }} />
             </h4>
 
             <p
@@ -53,11 +53,10 @@ const Footer = () => {
                 fontSize: "0.95rem",
                 lineHeight: 1.8,
                 marginBottom: "0.5rem",
+                fontWeight:500
               }}
             >
-              منصة ذكية تربط بين التجار وأصحاب المحلات لتسهيل شراء المنتجات
-              الغذائية بالجملة — بدون وسيط تقليدي، وبدون مخازن. وفر وقتك، واطلب
-              بضغطة واحدة، والتاجر يوصّل لباب المحل.
+شركتنا واحدة من أفضل الشركات الرائدة في مجال تطوير وتصميم المواقع الإلكترونية في مصر والعالم العربي .
             </p>
             <p
               style={{
@@ -66,7 +65,7 @@ const Footer = () => {
                 marginTop: 4,
               }}
             >
-              ماركتلي... الوسيط الذكي لتجارتك اليومية.
+              ايساج... الإختيار الأمثل للوصول للنجاح  .
             </p>
             <div className="mt-3 d-flex gap-3">
               {[
@@ -112,11 +111,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-md-4 ">
             <h5 style={{ color: colors.text, fontWeight: 600 }}>روابط مهمة</h5>
             <ul
-              className="list-unstyled mt-3"
-              style={{ color: colors.primary, lineHeight: 2 }}
+              className="list-unstyled mt-3  px-0"
+              style={{ color: colors.primary, lineHeight: 2 ,fontWeight:500,fontSize:"1.05rem"}}
             >
               {[
                 { text: "حمل التطبيق", sectionId: "download-section" },
@@ -169,10 +168,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-md-3  ">
             <h5 style={{ color: colors.text, fontWeight: 600 }}>تواصل معنا</h5>
             <ul
-              className="list-unstyled mt-3"
+              className="list-unstyled mt-3 px-0"
               style={{
                 color: colors.textSecondary,
                 fontSize: "1.05rem",
@@ -181,11 +180,11 @@ const Footer = () => {
             >
               <li className="mb-2">
                 <i className="fas fa-envelope ms-2"></i>
-                support@marketly.app
+                support@Isag.com
               </li>
               <li>
                 <i className="fas fa-phone ms-2"></i>
-                01012345678
+                01023363248
               </li>
             </ul>
           </div>
@@ -200,7 +199,7 @@ const Footer = () => {
           }}
         >
           جميع الحقوق محفوظة © {new Date().getFullYear()} — تصميم وتجميع فريق
-          ديڤ هاوس
+          ايساج تك
         </div>
       </div>
     </footer>
