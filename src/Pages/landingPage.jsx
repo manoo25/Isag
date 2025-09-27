@@ -1,11 +1,13 @@
 
 import FeaturesSection from "../Components/LandingComponents/Features/features";
-import HeroSection from "../Components/LandingComponents/Hero";
+
 import LandingNav from "../Components/LandingComponents/LandingNav";
 import Footer from "../Components/LandingComponents/Footer";
 import ScrollToTopButton from "../Components/LandingComponents/ScrollToTopButton";
 import TestimonialsSection from "../Components/LandingComponents/TestimonialsSection";
 import ServicesSection from "../Components/LandingComponents/ServicesComponent/Services";
+import HeroSection from "../Components/LandingComponents/HeroSection/HeroSection";
+import AboutSection from "../Components/LandingComponents/AboutContent/About";
 
 function Landing() {
   // const { token, UserRole } = useSelector((state) => state.Token);
@@ -18,7 +20,7 @@ function Landing() {
        
         <ServicesSection />
          <FeaturesSection />
-          <HeroSection  />
+          <AboutSection  />
         <TestimonialsSection />
       </div>
       <ScrollToTopButton />

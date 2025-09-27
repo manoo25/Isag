@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaRocket } from 'react-icons/fa';
-import heroImage from '../../assets/Images/vendor_clean_expanded.png';
-import './hero.css';
+import heroImage from '../../../assets/Images/vendor_clean_expanded.png';
+import './about.css';
 import { Link, useNavigate } from 'react-router-dom';
 // import { useSelector } from 'react-redux';
 
-const HeroSection = ( { token, role }) => {
+const AboutSection = ( { token, role }) => {
   const navigate = useNavigate();
  if (token && !role) return null;
   return (
@@ -66,4 +66,4 @@ const HeroSection = ( { token, role }) => {
   );
 };
 
-export default HeroSection;
+export default AboutSection;
